@@ -32,7 +32,7 @@ class InstallerController extends Controller
             return view('installer::install.eula');
         }
 
-        return redirect('/');
+        return redirect()->intended('/');
         
     }
 
@@ -48,7 +48,7 @@ class InstallerController extends Controller
             return redirect('/install/servercheck');
         }
 
-        return redirect('/');
+        return redirect()->intended('/');
 
     } 
 
@@ -65,7 +65,7 @@ class InstallerController extends Controller
             return view('installer::install.server');
         }
 
-        return redirect('/');
+        return redirect()->intended('/');
     }
 
      /**
@@ -80,7 +80,7 @@ class InstallerController extends Controller
             return redirect('/install/verify-license');
         }
 
-        return redirect('/');
+        return redirect()->intended('/');
     }
 
     /**
@@ -95,7 +95,7 @@ class InstallerController extends Controller
             return view('installer::install.license');
         }
 
-        return redirect('/');
+        return redirect()->intended('/');
     }
 
     /**
@@ -113,7 +113,7 @@ class InstallerController extends Controller
             return $licnese->verify(request());
         }
 
-        return redirect('/');
+        return redirect()->intended('/');
 
     }
 
@@ -129,7 +129,7 @@ class InstallerController extends Controller
             return view('installer::install.dbsetup');
         }
 
-        return redirect('/');
+        return redirect()->intended('/');
     }
 
     /**
@@ -157,7 +157,7 @@ class InstallerController extends Controller
             return redirect('/install/finish');
         }
 
-       return redirect('/');
+       return redirect()->intended('/');
 
     }
 
@@ -199,7 +199,7 @@ class InstallerController extends Controller
             }
         }
 
-        return redirect('/');
+        return redirect()->intended('/');
 
         
     }
