@@ -1,0 +1,27 @@
+{
+    "name": "mediacity/installer",
+    "description": "Installer for mediacity products",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mediacity\\Installer\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mediacity\\Installer\\InstallerServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "thegr8dev",
+            "email": "ankitswonders@gmail.com"
+        }
+    ],
+    "require": {
+        "jackiedo/dotenv-editor": "^1.2"
+    }
+}
