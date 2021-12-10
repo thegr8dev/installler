@@ -23,5 +23,10 @@
     ],
     "require": {
         "jackiedo/dotenv-editor": "^1.2"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@php artisan vendor:publish --tag=installer"
+        ]
     }
 }
